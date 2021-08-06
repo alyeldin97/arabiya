@@ -1,0 +1,1 @@
+class UnExpectedValueError extends Error{}

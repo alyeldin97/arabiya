@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "565991974697",
+    "project_id": "arabiya-b4801",
+    "storage_bucket": "arabiya-b4801.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565991974697:android:f07ed72a2019bab2af3938",
+        "android_client_info": {
+          "package_name": "com.example.arabiya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565991974697-qt5ojgn6p7heu6dviil6qjqje29led5e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.arabiya",
+            "certificate_hash": "f46ba5b20d9d0c411e5b5febb664c03e71187fed"
+          }
+        },
+        {
+          "client_id": "565991974697-r703nmjebp3mf0ub95jpv2gob2oc2m6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBksclvT03n5OzAyvP2BmNONiDSJbtxtPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565991974697-r703nmjebp3mf0ub95jpv2gob2oc2m6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

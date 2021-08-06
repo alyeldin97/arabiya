@@ -8,6 +8,7 @@ import 'package:arabiya/presentation/home/home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:google_sign_in/google_sign_in.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -101,7 +102,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           },
                         ),
                         Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             ElevatedButton(
                                 onPressed: () {
@@ -121,7 +122,24 @@ class _SignInScreenState extends State<SignInScreen> {
                                 child: const Text(' نسيت كلمة السر؟')),
                           ],
                         ),
-                        verticalWhiteSpace(height * 0.1),
+                        SizedBox(
+                          width: width*0.5,
+                          child: ElevatedButton(
+                            onPressed: () {
+                              bloc.add(const SigninEvent.signInWithGoogle());
+                            },
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text('الدخول بحساب جوجل'),
+                                SizedBox(
+                                    width: width * 0.04,
+                                    child: Image.network(
+                                        'https://image.similarpng.com/very-thumbnail/2020/12/Illustration-of-Google-icon-on-transparent-background-PNG.png')),
+                              ],
+                            ),
+                          ),
+                        ),
                         SizedBox(
                             width: width * 0.6,
                             child: ElevatedButton(

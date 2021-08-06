@@ -4,6 +4,7 @@ import 'package:dartz/dartz.dart';
 import 'package:arabiya/domain/auth/user.dart' as myUser;
 import 'package:arabiya/domain/auth/auth_failure.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/services.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class FirebaseAuthFacade implements IAuthFacade {
@@ -74,7 +75,7 @@ class FirebaseAuthFacade implements IAuthFacade {
 
       await _firebaseAuth.signInWithCredential(authCredential);
       return right(unit);
-    } on FirebaseAuthException catch (_) {
+    } on Exception catch (_) {
       return left(const AuthFailure.serverError());
     }
   }

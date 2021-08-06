@@ -26,6 +26,10 @@ class _$SigninEventTearOff {
   _ShowingValidationErrorsStarted showingValidationErrorsStarted() {
     return const _ShowingValidationErrorsStarted();
   }
+
+  _SignInWithGoogle signInWithGoogle() {
+    return const _SignInWithGoogle();
+  }
 }
 
 /// @nodoc
@@ -37,12 +41,14 @@ mixin _$SigninEvent {
   TResult when<TResult extends Object?>({
     required TResult Function(String? email, String? password) signInPressed,
     required TResult Function() showingValidationErrorsStarted,
+    required TResult Function() signInWithGoogle,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String? email, String? password)? signInPressed,
     TResult Function()? showingValidationErrorsStarted,
+    TResult Function()? signInWithGoogle,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -51,6 +57,7 @@ mixin _$SigninEvent {
     required TResult Function(_SignInPressed value) signInPressed,
     required TResult Function(_ShowingValidationErrorsStarted value)
         showingValidationErrorsStarted,
+    required TResult Function(_SignInWithGoogle value) signInWithGoogle,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -58,6 +65,7 @@ mixin _$SigninEvent {
     TResult Function(_SignInPressed value)? signInPressed,
     TResult Function(_ShowingValidationErrorsStarted value)?
         showingValidationErrorsStarted,
+    TResult Function(_SignInWithGoogle value)? signInWithGoogle,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -157,6 +165,7 @@ class _$_SignInPressed implements _SignInPressed {
   TResult when<TResult extends Object?>({
     required TResult Function(String? email, String? password) signInPressed,
     required TResult Function() showingValidationErrorsStarted,
+    required TResult Function() signInWithGoogle,
   }) {
     return signInPressed(email, password);
   }
@@ -166,6 +175,7 @@ class _$_SignInPressed implements _SignInPressed {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String? email, String? password)? signInPressed,
     TResult Function()? showingValidationErrorsStarted,
+    TResult Function()? signInWithGoogle,
     required TResult orElse(),
   }) {
     if (signInPressed != null) {
@@ -180,6 +190,7 @@ class _$_SignInPressed implements _SignInPressed {
     required TResult Function(_SignInPressed value) signInPressed,
     required TResult Function(_ShowingValidationErrorsStarted value)
         showingValidationErrorsStarted,
+    required TResult Function(_SignInWithGoogle value) signInWithGoogle,
   }) {
     return signInPressed(this);
   }
@@ -190,6 +201,7 @@ class _$_SignInPressed implements _SignInPressed {
     TResult Function(_SignInPressed value)? signInPressed,
     TResult Function(_ShowingValidationErrorsStarted value)?
         showingValidationErrorsStarted,
+    TResult Function(_SignInWithGoogle value)? signInWithGoogle,
     required TResult orElse(),
   }) {
     if (signInPressed != null) {
@@ -256,6 +268,7 @@ class _$_ShowingValidationErrorsStarted
   TResult when<TResult extends Object?>({
     required TResult Function(String? email, String? password) signInPressed,
     required TResult Function() showingValidationErrorsStarted,
+    required TResult Function() signInWithGoogle,
   }) {
     return showingValidationErrorsStarted();
   }
@@ -265,6 +278,7 @@ class _$_ShowingValidationErrorsStarted
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String? email, String? password)? signInPressed,
     TResult Function()? showingValidationErrorsStarted,
+    TResult Function()? signInWithGoogle,
     required TResult orElse(),
   }) {
     if (showingValidationErrorsStarted != null) {
@@ -279,6 +293,7 @@ class _$_ShowingValidationErrorsStarted
     required TResult Function(_SignInPressed value) signInPressed,
     required TResult Function(_ShowingValidationErrorsStarted value)
         showingValidationErrorsStarted,
+    required TResult Function(_SignInWithGoogle value) signInWithGoogle,
   }) {
     return showingValidationErrorsStarted(this);
   }
@@ -289,6 +304,7 @@ class _$_ShowingValidationErrorsStarted
     TResult Function(_SignInPressed value)? signInPressed,
     TResult Function(_ShowingValidationErrorsStarted value)?
         showingValidationErrorsStarted,
+    TResult Function(_SignInWithGoogle value)? signInWithGoogle,
     required TResult orElse(),
   }) {
     if (showingValidationErrorsStarted != null) {
@@ -301,6 +317,98 @@ class _$_ShowingValidationErrorsStarted
 abstract class _ShowingValidationErrorsStarted implements SigninEvent {
   const factory _ShowingValidationErrorsStarted() =
       _$_ShowingValidationErrorsStarted;
+}
+
+/// @nodoc
+abstract class _$SignInWithGoogleCopyWith<$Res> {
+  factory _$SignInWithGoogleCopyWith(
+          _SignInWithGoogle value, $Res Function(_SignInWithGoogle) then) =
+      __$SignInWithGoogleCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$SignInWithGoogleCopyWithImpl<$Res>
+    extends _$SigninEventCopyWithImpl<$Res>
+    implements _$SignInWithGoogleCopyWith<$Res> {
+  __$SignInWithGoogleCopyWithImpl(
+      _SignInWithGoogle _value, $Res Function(_SignInWithGoogle) _then)
+      : super(_value, (v) => _then(v as _SignInWithGoogle));
+
+  @override
+  _SignInWithGoogle get _value => super._value as _SignInWithGoogle;
+}
+
+/// @nodoc
+
+class _$_SignInWithGoogle implements _SignInWithGoogle {
+  const _$_SignInWithGoogle();
+
+  @override
+  String toString() {
+    return 'SigninEvent.signInWithGoogle()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _SignInWithGoogle);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? email, String? password) signInPressed,
+    required TResult Function() showingValidationErrorsStarted,
+    required TResult Function() signInWithGoogle,
+  }) {
+    return signInWithGoogle();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String? email, String? password)? signInPressed,
+    TResult Function()? showingValidationErrorsStarted,
+    TResult Function()? signInWithGoogle,
+    required TResult orElse(),
+  }) {
+    if (signInWithGoogle != null) {
+      return signInWithGoogle();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_SignInPressed value) signInPressed,
+    required TResult Function(_ShowingValidationErrorsStarted value)
+        showingValidationErrorsStarted,
+    required TResult Function(_SignInWithGoogle value) signInWithGoogle,
+  }) {
+    return signInWithGoogle(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_SignInPressed value)? signInPressed,
+    TResult Function(_ShowingValidationErrorsStarted value)?
+        showingValidationErrorsStarted,
+    TResult Function(_SignInWithGoogle value)? signInWithGoogle,
+    required TResult orElse(),
+  }) {
+    if (signInWithGoogle != null) {
+      return signInWithGoogle(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _SignInWithGoogle implements SigninEvent {
+  const factory _SignInWithGoogle() = _$_SignInWithGoogle;
 }
 
 /// @nodoc
